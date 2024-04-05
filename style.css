@@ -3,81 +3,87 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Adamina", serif;
-
 }
-body{}
+
 
 .contaner-of-all {
-    max-width: 1728px;
-    height: 1140px;
     padding: 32px;
     display: flex;
-    gap: 32px;
 }
 
 .contaner-of-form {
-    width: 816px;
-    height: 1076px;
-
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .log-in-form {
-    width: 388px;
-    height: 763px;
-    margin: 156.5px 214px;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
 
 h1 {
     font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    font-size: medium;
     color: #0c1421;
 }
 
 p {
-    margin-bottom: 48px;
-    font-size: 18px;
+    margin-bottom: 12px;
+    font-size: 12px;
     font-weight: 400;
+    font-size: small;
     color: #313957;
 }
 
 label {
     margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
+    margin-top: 16px;
+    font-size: small;
     color: #0c1421;
 }
 
 input {
-    margin-bottom: 24px;
-    padding: 12px;
-    width: 388px;
-    height: 48px;
-    background-color: #F7FBFF;
+    width: 100%;
+    height: 42px;
+    padding: 6px;
+    border-radius: 8px;
     border: 1px solid #D4D7E3;
-    border-radius: 12px;
+    background-color: #F7FBFF;
 }
 
 a {
     text-align: right;
     text-decoration: none;
-    margin-bottom: 24px;
+    font-size: small;
+    margin: 12px 0px;
 }
 
 .sign-in {
     width: 100%;
-    height: 52px;
-    margin-bottom: 48px;
+    height: 44px;
+    margin-bottom: 32px;
     border-radius: 12px;
-    text-align: center;
     background-color: #162D3A;
     color: #ffffff;
-    font-size: 20px;
-    font-weight: 400;
+}
+
+.sec-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    height: 52px;
+    font-size: 16px;
+    padding: 12px 9px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: #F3F9FA;
 }
 
 .or-div {
@@ -89,7 +95,7 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 2px;
-    margin-bottom: 42px;
+    margin-bottom: 32px;
     color: #294957;
 }
 
@@ -107,64 +113,58 @@ a {
     margin-left: 8px;
 }
 
-.Google{
-    width: 30px;
-    aspect-ratio: 1/1;
-    background-image: url('Google.png');
-    position:absolute;
-    top: 746px;
-    left: 330px;
+.Google {
+    width: 28px;
+    height: 28px;
+    background-image: url("Google.png");
 }
 
-.Facebook{
-    width: 30px;
-    aspect-ratio: 1/1;
-    background-image: url('Facebook.png');
-    position:absolute;
-    top: 814px;
-    left: 320px;
-}
-
-.sec-btn {
-    width: 100%;
-    height: 52px;
-    border-radius: 12px;
-    padding: 12px 9px 12px 9px;
-    margin-bottom: 16px;
-    background-color: #F3F9FA;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
+.Facebook {
+    width: 28px;
+    height: 28px;
+    background-image: url("Facebook.png")
 }
 
 .end-q {
-    margin-top: 32px;
+    margin-top: 8px;
     text-align: center;
-    font-weight: 400;
 }
 
 .flower-img {
-
-    width: 816px;
-    height: 1076px;
-    /* background-image: url('Login Art.jpg'); */
+    width: 50%;
 }
 
 img {
-   
-
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    object-position: center;
 }
 
-@media screen and (max-width: 769px) {
-    .contaner-of-all{
-        flex-direction: column-reverse;
-        width: 436px;
-        height: 855px;
+@media screen and (max-width: 1000px) {
 
+    .contaner-of-all {
+        flex-direction: column-reverse;
+        gap: 24px;
+        padding: 24px;
+    }
+    .contaner-of-form {
+        width: 100%;
+    }
+    .log-in-form {
+        width: 100%;
     }
     .flower-img {
-        width: 436px;
-        height: 180px;
-        padding: 0px 24px;
+        width: 100%;
     }
+    img {
+        width: 100%;
+        height: 180px;
+        border-radius: 20px;
+        object-fit: none;
+        object-position: center;
+    }
+  
 }
+
+/* @media  need 4k ?*/
